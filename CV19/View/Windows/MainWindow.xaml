@@ -12,8 +12,8 @@
     </Window.DataContext>
     <DockPanel>
         <Menu DockPanel.Dock="Top">
-            <MenuItem Header="Фаил">
-                <MenuItem Header="Выход"/>
+            <MenuItem Header="Файл">
+                <MenuItem Header="Выход " Command="{Binding CloseAppCommand}"/>
             </MenuItem>
             <MenuItem Header="Помощь">
                 <MenuItem Header="О программе"/>
