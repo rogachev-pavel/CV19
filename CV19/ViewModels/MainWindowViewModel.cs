@@ -9,8 +9,6 @@ namespace CV19.ViewModels
 {
     internal class MainWindowViewModel : ViewModel
     {
-
-
         #region Заголовок окна
 
         /// <summary> Заголовок окна </summary>
@@ -20,6 +18,19 @@ namespace CV19.ViewModels
             get => _Title;
             set => Set(ref _Title, value); 
         }
+
+        #endregion
+
+        #region Статус программы
+
+        /// <summary>Статус программы</summary> 
+        private string _Status = "Ready";
+        public string Status
+        {
+            get => _Status;
+            set => Set(ref _Status, value);
+        }
+        
         #endregion
     }
 }
